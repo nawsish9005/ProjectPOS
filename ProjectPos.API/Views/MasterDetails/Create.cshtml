@@ -1,0 +1,71 @@
+﻿@model ProjectPos.Client.Models.Invoice
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Invoice</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="OrderNumber" class="control-label"></label>
+                <input asp-for="OrderNumber" class="form-control" />
+                <span asp-validation-for="OrderNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PayMethod" class="control-label"></label>
+                <input asp-for="PayMethod" class="form-control" />
+                <span asp-validation-for="PayMethod" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TotalAmount" class="control-label"></label>
+                <input asp-for="TotalAmount" class="form-control" />
+                <span asp-validation-for="TotalAmount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                ProductName
+            </th>
+            <th>
+                Price
+            </th>
+            <th>
+                Quantity
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.InvoiceDetailss)
+        {
+            <tr>
+                <td>
+                    <input asp-for="@item.ProductName" class="form-control" />
+                </td>
+                <td>
+                    <input asp-for="@item.Price" class="form-control" />
+                </td>
+                <td>
+                    <input asp-for="@item.Quantity" class="form-control" />
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectPOS", "ProjectPOS\ProjectPOS.csproj", "{3F4D2095-7F29-40C3-B6F7-A07703F7AEF3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectPosClient", "ProjectPosClient\ProjectPosClient.csproj", "{8C9C8C2E-58FF-4E51-86C3-AB76051B371E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3F4D2095-7F29-40C3-B6F7-A07703F7AEF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F4D2095-7F29-40C3-B6F7-A07703F7AEF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F4D2095-7F29-40C3-B6F7-A07703F7AEF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F4D2095-7F29-40C3-B6F7-A07703F7AEF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C9C8C2E-58FF-4E51-86C3-AB76051B371E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C9C8C2E-58FF-4E51-86C3-AB76051B371E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C9C8C2E-58FF-4E51-86C3-AB76051B371E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C9C8C2E-58FF-4E51-86C3-AB76051B371E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C0550A5F-44AE-4BC9-A714-8BCD65C46F3B}
+	EndGlobalSection
+EndGlobal
